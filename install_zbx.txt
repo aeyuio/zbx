@@ -1,0 +1,7 @@
+# установка забикс агента
+
+wget http://repo.zabbix.com/zabbix/3.2/debian/pool/main/z/zabbix-release/zabbix-release_3.2-1+jessie_all.deb
+dpkg -i zabbix-release_3.2-1+jessie_all.deb
+rm zabbix-release_3.2-1+jessie_all.deb
+aptitude update
+aptitude -y install zabbix-agent
